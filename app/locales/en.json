@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Omar Jouied",
+    "subtitle": "Web Developer & Next.js Specialist",
+    "description": "Crafting modern, efficient, and scalable web applications",
+    "cta": "Get in Touch",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "content": "I'm Omar Jouied, a passionate web developer with 5+ years of experience, specializing in building robust and scalable applications using Next.js and React. My expertise lies in creating performant, SEO-friendly websites that provide exceptional user experiences. I'm constantly learning and adapting to new technologies to stay at the forefront of web development."
+  },
+  "experience": {
+    "title": "Professional Experience"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View Project"
+  },
+  "testimonials": {
+    "title": "What Clients Say"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone number",
+    "whatsapp": "WhatsApp",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "sent": "Message Sent",
+    "successMessage": "Thank you for your message. I'll get back to you soon!",
+    "sendAnother": "Send Another Message",
+    "linkedin": "LinkedIn Profile",
+    "github": "GitHub Profile",
+    "linkedinTitle": "LinkedIn",
+    "githubTitle": "GitHub",
+    "phoneTitle": "Call",
+    "whatsappTitle": "WhatsApp",
+    "errors": {
+      "nameRequired": "Name is required",
+      "invalidEmail": "Invalid email address",
+      "messageLength": "Message must be at least 10 characters long",
+      "duplicateMessage": "This message has already been sent. Please wait before sending again.",
+      "serverError": "An error occurred while sending your message. Please try again later."
+    }
+  }
+}
