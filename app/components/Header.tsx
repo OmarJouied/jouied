@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { Languages, LanguagesIcon, Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '../contexts/LanguageContext'
 import LanguageSwitcher from './LanguageSwitcher'
@@ -20,7 +20,7 @@ export default function Header() {
       setIsMenuOpen(false)
     }
 
-    const links = document.querySelectorAll('nav a[href^="#"]')
+    const links = document.querySelectorAll('header a')
     links.forEach(link => {
       link.addEventListener('click', closeMenu)
     })

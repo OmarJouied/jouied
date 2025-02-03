@@ -26,7 +26,8 @@
   },
   "projects": {
     "title": "Projects",
-    "viewProject": "View Project"
+    "viewProject": "View Project",
+    "sourceLink": "View Code"
   },
   "testimonials": {
     "title": "What Clients Say"

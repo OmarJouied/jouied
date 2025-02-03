@@ -86,9 +86,9 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="contact" className={`scroll-mt-6 md:scroll-mt-8 py-16 md:py-20 bg-gray-800 text-white ${language === 'ar' ? 'rtl' : 'ltr'}`}>
+    <section id="contact" className={`scroll-mt-8 md:scroll-mt-12 py-16 md:py-20 bg-gray-800 text-white ${language === 'ar' ? 'rtl' : 'ltr'}`}>
       <div className="container mx-auto px-4 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center font-heading">{t('contact.title')}</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center font-heading">{t('contact.title')}</h2>
         {isSuccess ? (
           <div className="max-w-lg mx-auto mb-8 text-center">
             <p className="text-green-400 mb-4">{t('contact.successMessage')}</p>

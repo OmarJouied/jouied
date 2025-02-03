@@ -67,13 +67,13 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <a href="#contact" className="hero-cta bg-secondary text-primary px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors inline-block">
+            <a href="#contact" className="w-full sm:w-fit text-center hero-cta bg-secondary text-primary px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors inline-block">
               {t('hero.cta')}
             </a>
             <a
               href={`/omar-jouied-cv-${language}.pdf`}
               download
-              className="download-cv bg-accent text-primary px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors inline-block"
+              className="w-full sm:w-fit text-center download-cv bg-accent text-primary px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors inline-block"
             >
               {t('hero.downloadCV')}
             </a>

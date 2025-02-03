@@ -1,6 +1,7 @@
-import mongoose, { models, Schema } from 'mongoose'
+import mongoose, { InferSchemaType, models, Schema } from 'mongoose'
 
 const JobSchema = new Schema({
+  lang: String,
   title: {
     type: String,
     required: [true, 'Please provide a title for this job.'],
@@ -25,3 +26,4 @@ const Job = models.Job || mongoose.model('Job', JobSchema);
 
 export default Job;
 
+export type JobType = InferSchemaType<typeof JobSchema> & { _id: string };

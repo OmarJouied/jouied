@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '../contexts/LanguageContext'
 import { ChevronDown } from 'lucide-react'
 
-const languages = [
+export const languages = [
   { code: 'en', name: 'English' },
   { code: 'fr', name: 'Français' },
   { code: 'ar', name: 'العربية' }

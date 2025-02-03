@@ -9,13 +9,14 @@ export default function ScrollToTopButton() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
+      if (window.scrollY > 300) {
         setIsVisible(true)
       } else {
         setIsVisible(false)
       }
     }
 
+    toggleVisibility()
     window.addEventListener('scroll', toggleVisibility)
 
     return () => window.removeEventListener('scroll', toggleVisibility)
@@ -32,7 +33,7 @@ export default function ScrollToTopButton() {
     <AnimatePresence>
       {isVisible && (
         <motion.button
-          className="fixed bottom-4 right-4 p-2 bg-secondary text-primary rounded-full shadow-lg z-50"
+          className="fixed bottom-4 right-4 p-2 bg-secondary text-primary rounded-full shadow-[0_0_.5rem_#0009] z-50"
           onClick={scrollToTop}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
