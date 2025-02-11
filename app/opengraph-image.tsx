@@ -22,6 +22,7 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           position: 'relative',
+          textAlign: 'center'
         }}
       >
         <img src={logoSrc} style={size} />
@@ -33,7 +34,7 @@ export default async function Image() {
             justifyContent: 'flex-end',
             position: 'absolute',
             zIndex: '10',
-            inset: '0',
+            ...size,
             background: '#0004'
           }}
         >
