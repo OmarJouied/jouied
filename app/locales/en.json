@@ -9,14 +9,16 @@
   },
   "hero": {
     "title": "Omar Jouied",
-    "subtitle": "Web Developer & Next.js Specialist",
+    "subtitle": "Software Developer & Web Development Specialist, more specifically with Django and Next.js",
     "description": "Crafting modern, efficient, and scalable web applications",
     "cta": "Get in Touch",
     "downloadCV": "Download CV"
   },
   "about": {
     "title": "About Me",
-    "content": "I'm Omar Jouied, a passionate web developer with 5+ years of experience, specializing in building robust and scalable applications using Next.js and React. My expertise lies in creating performant, SEO-friendly websites that provide exceptional user experiences. I'm constantly learning and adapting to new technologies to stay at the forefront of web development."
+    "content": "I'm Omar Jouied, a passionate web developer with 5+ years of experience, specializing in building robust and scalable applications using Next.js and React. My expertise lies in creating performant, SEO-friendly websites that provide exceptional user experiences. I'm constantly learning and adapting to new technologies to stay at the forefront of web development.",
+    "lang-label": "language",
+    "save": "save"
   },
   "experience": {
     "title": "Professional Experience"

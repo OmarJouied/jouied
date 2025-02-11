@@ -9,14 +9,16 @@
   },
   "hero": {
     "title": "Omar Jouied",
-    "subtitle": "Développeur Web & Spécialiste Next.js",
+    "subtitle": "Développeur de logiciels et spécialiste du développement web, plus précisément avec Django et Next.js",
     "description": "Création d'applications web modernes, efficaces et évolutives",
     "cta": "Contactez-moi",
     "downloadCV": "Télécharger CV"
   },
   "about": {
     "title": "À propos de moi",
-    "content": "Je suis Omar Jouied, un développeur web passionné avec plus de 5 ans d'expérience, spécialisé dans la création d'applications robustes et évolutives utilisant Next.js et React. Mon expertise réside dans la création de sites web performants et optimisés pour le référencement, offrant des expériences utilisateur exceptionnelles. J'apprends constamment et m'adapte aux nouvelles technologies pour rester à la pointe du développement web."
+    "content": "Je suis Omar Jouied, un développeur web passionné avec plus de 5 ans d'expérience, spécialisé dans la création d'applications robustes et évolutives utilisant Next.js et React. Mon expertise réside dans la création de sites web performants et optimisés pour le référencement, offrant des expériences utilisateur exceptionnelles. J'apprends constamment et m'adapte aux nouvelles technologies pour rester à la pointe du développement web.",
+    "lang-label": "language",
+    "save": "enregistrer"
   },
   "experience": {
     "title": "Expérience Professionnelle"
