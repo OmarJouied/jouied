@@ -4,7 +4,7 @@ import { connectDB } from './db';
 export async function getAbout(lang: string): Promise<AboutType> {
   try {
     await connectDB();
-    const about = await About.findOne({ lang }).lean() as AboutType;
+    const about = await About.findOne({ lang }).lean() as unknown as AboutType;
     return { ...about, _id: about._id.toString() };
   } catch (e) {
     console.error(e)

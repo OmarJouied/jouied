@@ -4,7 +4,7 @@ import { connectDB } from './db';
 export async function getSkills(): Promise<SkillType[]> {
   try {
     await connectDB();
-    const skills = await Skill.find({}).lean() as SkillType[];
+    const skills = await Skill.find({}).lean() as unknown as SkillType[];
     return skills.map(skill => ({
       ...skill,
       _id: skill._id.toString()

@@ -6,7 +6,7 @@ import enTranslations from '../locales/en.json'
 import frTranslations from '../locales/fr.json'
 import arTranslations from '../locales/ar.json'
 
-type Language = 'en' | 'fr' | 'ar'
+export type Language = 'en' | 'fr' | 'ar'
 
 interface LanguageContextType {
   language: Language

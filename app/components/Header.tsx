@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Languages, LanguagesIcon, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '../contexts/LanguageContext'
 import LanguageSwitcher from './LanguageSwitcher'
@@ -16,7 +16,7 @@ export default function Header() {
   useEffect(() => {
     setHash(window.location.hash)
     const closeMenu = (e: Event) => {
-      setHash(((e.currentTarget as any).href as string).match(/\#(\w+)/)?.[0] ?? "")
+      setHash(((e.currentTarget as HTMLAnchorElement).href as string).match(/\#(\w+)/)?.[0] ?? "")
       setIsMenuOpen(false)
     }
 

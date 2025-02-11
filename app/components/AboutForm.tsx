@@ -6,8 +6,8 @@ import { Textarea } from '@/components/ui/textarea'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { languages } from './LanguageSwitcher'
 import { Button } from '@/components/ui/button'
-import { useActionState } from 'react'
-import aboutMe from '../actions/about-me'
+// import { useActionState } from 'react'
+// import aboutMe from '../actions/about-me'
 
 export default function AboutForm() {
   const { t, language } = useLanguage();

@@ -29,7 +29,7 @@ function ExperienceItem({ job, index, lang }: { job: JobType; index: number; lan
   )
 }
 
-export default async function Experience({ jobs }: { jobs: JobType[] }) {
+export default function Experience({ jobs }: { jobs: JobType[] }) {
   const { t, language } = useLanguage();
 
   return (

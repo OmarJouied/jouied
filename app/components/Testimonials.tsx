@@ -31,7 +31,7 @@ function TestimonialCard({ testimonial, index }: { testimonial: TestimonialType;
           <p className="text-xs md:text-sm text-gray-400">{testimonial.role} at {testimonial.company}</p>
         </div>
       </div>
-      <p className="text-sm md:text-base text-gray-300 italic">"{testimonial.text}"</p>
+      <p className="text-sm md:text-base text-gray-300 italic">&quot;{testimonial.text}&quot;</p>
     </motion.div>
   )
 }

@@ -28,7 +28,7 @@ export default function Contact() {
     clearExpiredCache()
   }, []);
 
-  const clearExpiredCache = useCallback(() => {
+  const clearExpiredCache: () => void = useCallback(() => {
     const cache = JSON.parse(localStorage.getItem(CACHE_KEY) || '[]') as CachedMessage[]
     const now = Date.now()
     const updatedCache = cache.filter(item => now - item.timestamp < CACHE_EXPIRY)

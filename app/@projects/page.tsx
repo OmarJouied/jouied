@@ -1,10 +1,10 @@
 import Projects from "../components/Projects";
-import { LanguageProvider } from "../contexts/LanguageContext";
+import { Language, LanguageProvider } from "../contexts/LanguageContext";
 import { getProjects } from "../lib/getProjects";
 
-export default async function ProjectsPage({ searchParams }: { searchParams: { lang?: string; open: string; } }) {
-  const lang = searchParams.lang || 'ar' as any;
-  const open = searchParams.open || 'ar' as any;
+export default async function ProjectsPage({ searchParams }: { searchParams: Promise<{ lang?: Language; open: string; }> }) {
+  const lang = (await searchParams).lang || 'ar' as Language;
+  const open = (await searchParams).open || 'ar' as Language;
   const projects = await getProjects(lang);
 
   return (

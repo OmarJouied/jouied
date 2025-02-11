@@ -4,7 +4,7 @@ import { connectDB } from './db';
 export async function getProjects(lang: string): Promise<ProjectType[]> {
   try {
     await connectDB();
-    const projects = await Project.find({ lang }).lean() as ProjectType[];
+    const projects = await Project.find({ lang }).lean() as unknown as ProjectType[];
     return projects.map(project => ({
       ...project,
       _id: project._id.toString()

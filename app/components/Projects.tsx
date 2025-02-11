@@ -24,8 +24,8 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
         <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">{project.title}</h3>
         <p className="text-sm md:text-base text-gray-400 mb-4">{project.description}</p>
         <div className="flex justify-between">
-          <a href={project.liveLink} className="text-accent font-semibold hover:underline text-xs md:text-sm">{t('projects.viewProject')}</a>
-          <a href={project.sourceLink} className="text-accent font-semibold hover:underline text-xs md:text-sm">{t('projects.sourceLink')}</a>
+          <a href={project.liveLink ?? "/"} className="text-accent font-semibold hover:underline text-xs md:text-sm">{t('projects.viewProject')}</a>
+          <a href={project.sourceLink ?? "/"} className="text-accent font-semibold hover:underline text-xs md:text-sm">{t('projects.sourceLink')}</a>
         </div>
       </div>
     </motion.div>

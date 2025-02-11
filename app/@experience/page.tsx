@@ -1,10 +1,10 @@
 import Experience from "../components/Experience";
-import { LanguageProvider } from "../contexts/LanguageContext";
+import { Language, LanguageProvider } from "../contexts/LanguageContext";
 import { getJobs } from "../lib/getJobs";
 
-export default async function ExperiencePage({ searchParams }: { searchParams: { lang?: string; open: string; } }) {
-  const lang = searchParams.lang || 'ar' as any;
-  const open = searchParams.open || 'ar' as any;
+export default async function ExperiencePage({ searchParams }: { searchParams: Promise<{ lang?: Language; open: string; }> }) {
+  const lang = (await searchParams).lang || 'ar' as Language;
+  const open = (await searchParams).open || 'ar' as Language;
   const jobs = await getJobs(lang);
 
   return (

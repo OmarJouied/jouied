@@ -4,7 +4,7 @@ import { connectDB } from './db';
 export async function getJobs(lang: string): Promise<JobType[]> {
   try {
     await connectDB();
-    const jobs = await Job.find({ lang }).sort({ period: -1 }).lean() as JobType[];
+    const jobs = await Job.find({ lang }).sort({ period: -1 }).lean() as unknown as JobType[];
     return jobs.map(job => ({
       ...job,
       _id: job._id.toString()

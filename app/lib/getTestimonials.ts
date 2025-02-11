@@ -4,7 +4,7 @@ import { connectDB } from './db';
 export async function getTestimonials(lang: string): Promise<TestimonialType[]> {
   try {
     await connectDB();
-    const testimonials = await Testimonial.find({ lang }).sort({ period: -1 }).lean() as TestimonialType[];
+    const testimonials = await Testimonial.find({ lang }).sort({ period: -1 }).lean() as unknown as TestimonialType[];
     return testimonials.map(testimonial => ({
       ...testimonial,
       _id: testimonial._id.toString()

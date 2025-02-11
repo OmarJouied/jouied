@@ -1,10 +1,10 @@
 import Testimonials from "../components/Testimonials";
-import { LanguageProvider } from "../contexts/LanguageContext";
+import { Language, LanguageProvider } from "../contexts/LanguageContext";
 import { getTestimonials } from "../lib/getTestimonials";
 
-export default async function TestimonialsPage({ searchParams }: { searchParams: { lang?: string; open: string; } }) {
-  const lang = searchParams.lang || 'ar' as any;
-  const open = searchParams.open || 'ar' as any;
+export default async function TestimonialsPage({ searchParams }: { searchParams: Promise<{ lang?: Language; open: string; }> }) {
+  const lang = (await searchParams).lang || 'ar' as Language;
+  const open = (await searchParams).open || 'ar' as Language;
   const testimonials = await getTestimonials(lang);
 
   return (
