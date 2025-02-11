@@ -4,6 +4,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Omar Jouied - Software Developer & Web Developer Specialist',
   description: 'Portfolio of Omar Jouied, a software developer and web developer specializing with modern web technologies.',
+  openGraph: {
+    type: "website",
+  }
 }
 
 export default function RootLayout({
