@@ -2,9 +2,9 @@ import { ImageResponse } from 'next/og'
 import { join } from 'node:path'
 import { readFile } from 'node:fs/promises'
 
-export const alt = 'About Acme'
+export const alt = "Omar's Portfolio"
 export const size = {
-  width: 1200,
+  width: 630,
   height: 630,
 }
 export const contentType = 'image/jpg'
@@ -21,9 +21,24 @@ export default async function Image() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          position: 'relative',
         }}
       >
         <img src={logoSrc} />
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: "column",
+            alignItems: 'center',
+            justifyContent: 'end',
+            position: 'absolute',
+            zIndex: '10',
+            background: '#0004'
+          }}
+        >
+          <span style={{ fontSize: '14' }}>Omar's</span>
+          <span style={{ fontSize: '18', fontWeight: "bold" }}>Portfolio</span>
+        </div>
       </div>
     )
   )
