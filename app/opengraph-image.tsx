@@ -24,7 +24,7 @@ export default async function Image() {
           position: 'relative',
         }}
       >
-        <img src={logoSrc} />
+        <img src={logoSrc} style={size} />
         <div
           style={{
             display: 'flex',
@@ -33,6 +33,7 @@ export default async function Image() {
             justifyContent: 'flex-end',
             position: 'absolute',
             zIndex: '10',
+            inset: '0',
             background: '#0004'
           }}
         >
