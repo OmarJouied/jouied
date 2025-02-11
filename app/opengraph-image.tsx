@@ -35,11 +35,12 @@ export default async function Image() {
             position: 'absolute',
             zIndex: '10',
             ...size,
-            background: '#0004'
+            background: '#0006',
+            color: 'white'
           }}
         >
-          <span style={{ fontSize: '14' }}>Omar's</span>
-          <span style={{ fontSize: '18', fontWeight: "bold" }}>Portfolio</span>
+          <span style={{ fontSize: '35' }}>Omar's</span>
+          <span style={{ fontSize: '40', fontWeight: "bold" }}>Portfolio</span>
         </div>
       </div>
     )
