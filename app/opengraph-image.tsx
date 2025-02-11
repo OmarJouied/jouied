@@ -25,7 +25,7 @@ export default async function Image() {
           textAlign: 'center'
         }}
       >
-        <img src={logoSrc} style={size} />
+        <img src={logoSrc} style={{ ...size, margin: 'auto' }} />
         <div
           style={{
             display: 'flex',
@@ -35,12 +35,13 @@ export default async function Image() {
             position: 'absolute',
             zIndex: '10',
             ...size,
-            background: '#0006',
-            color: 'white'
+            background: '#0008',
+            color: 'white',
+            padding: '40px'
           }}
         >
-          <span style={{ fontSize: '35' }}>Omar's</span>
-          <span style={{ fontSize: '40', fontWeight: "bold" }}>Portfolio</span>
+          <span style={{ fontSize: '45' }}>Omar's</span>
+          <span style={{ fontSize: '60', fontWeight: "bold" }}>Portfolio</span>
         </div>
       </div>
     )
