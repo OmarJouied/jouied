@@ -11,7 +11,7 @@ export const languages = [
   { code: 'ar', name: 'العربية' }
 ]
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ setIsMenuOpen }: { setIsMenuOpen?: (state: any) => void }) {
   const { language, setLanguage } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
@@ -21,6 +21,7 @@ export default function LanguageSwitcher() {
   const handleLanguageChange = (lang: 'en' | 'fr' | 'ar') => {
     setLanguage(lang)
     setIsOpen(false)
+    setIsMenuOpen?.(false)
   }
 
   useEffect(() => {

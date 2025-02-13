@@ -82,7 +82,7 @@ export default function Header() {
                 </li>
               ))}
               <li className="md:hidden mt-4">
-                <LanguageSwitcher />
+                <LanguageSwitcher setIsMenuOpen={setIsMenuOpen} />
               </li>
             </motion.ul>
           )}
