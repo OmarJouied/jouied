@@ -41,7 +41,7 @@ export default function Hero() {
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-heading"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.25 }}
           >
             {t('hero.title')}
           </motion.h1>
@@ -49,7 +49,7 @@ export default function Hero() {
             className="text-xl md:text-2xl lg:text-3xl mb-6 font-heading text-secondary"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.25, delay: 0.1 }}
           >
             {t('hero.subtitle')}
           </motion.h2>
@@ -57,7 +57,7 @@ export default function Hero() {
             className="text-base lg:text-lg mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.25, delay: 0.2 }}
           >
             {t('hero.description')}
           </motion.p>
@@ -65,7 +65,7 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.25, delay: 0.3 }}
           >
             <a href="#contact" className="w-full sm:w-fit text-center hero-cta bg-secondary text-primary px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors inline-block">
               {t('hero.cta')}
@@ -83,7 +83,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.25, delay: 0.2 }}
           >
             <Image
               src="/jouied.jpg"
