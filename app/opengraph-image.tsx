@@ -4,14 +4,14 @@ import { readFile } from 'node:fs/promises'
 
 export const alt = "Omar's Portfolio"
 export const size = {
-  width: 630,
+  width: 1200,
   height: 630,
 }
-export const contentType = 'image/jpg'
+export const contentType = 'image/png'
 
 
 export default async function Image() {
-  const logoData = await readFile(join(process.cwd(), 'public/jouied.jpg'))
+  const logoData = await readFile(join(process.cwd(), 'public/open-graph.png'))
   const logoSrc = Uint8Array.from(logoData).buffer as unknown as string
 
   return new ImageResponse(
