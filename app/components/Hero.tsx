@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../contexts/LanguageContext'
+import Link from 'next/link'
 
 export default function Hero() {
   const { t, language } = useLanguage()
@@ -21,15 +22,11 @@ export default function Hero() {
       }
     }
 
-    const links = document.querySelectorAll('.hero-cta, .download-cv')
-    links.forEach(link => {
-      link.addEventListener('click', handleScroll)
-    })
+    const link = document.querySelector('.hero-cta')!;
+    link.addEventListener('click', handleScroll)
 
     return () => {
-      links.forEach(link => {
-        link.removeEventListener('click', handleScroll)
-      })
+      link.removeEventListener('click', handleScroll)
     }
   }, [])
 
@@ -37,24 +34,24 @@ export default function Hero() {
     <section className={`bg-primary text-secondary scroll-mt-6 md:scroll-mt-8 py-16 md:py-20 ${language === 'ar' ? 'rtl' : 'ltr'}`}>
       <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-y-8">
         <div className="md:w-1/2">
-          <motion.h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-heading"
+          <motion.h2
+            className="text-2xl md:text-3xl lg:text-4xl mb-6 font-heading font-bold text-secondary"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.25 }}
           >
             {t('hero.title')}
-          </motion.h1>
-          <motion.h2
-            className="text-xl md:text-2xl lg:text-3xl mb-6 font-heading text-secondary"
+          </motion.h2>
+          <motion.h1
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-heading"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.25, delay: 0.1 }}
           >
             {t('hero.subtitle')}
-          </motion.h2>
+          </motion.h1>
           <motion.p
-            className="text-base lg:text-lg mb-8"
+            className="text-xl md:text-2xl lg:text-3xl mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.25, delay: 0.2 }}
@@ -70,14 +67,14 @@ export default function Hero() {
             <a href="#contact" className="w-full sm:w-fit text-center hero-cta bg-secondary text-primary px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors inline-block">
               {t('hero.cta')}
             </a>
-            <a
+            <Link
               href={`/omar-jouied-cv-${language}.pdf`}
-              download
               className="w-full sm:w-fit text-center download-cv bg-accent text-primary px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors inline-block"
               target='_blank'
+              download
             >
               {t('hero.downloadCV')}
-            </a>
+            </Link>
           </motion.div>
         </div>
         <div className="md:w-1/2 flex justify-center">
