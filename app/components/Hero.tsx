@@ -74,6 +74,7 @@ export default function Hero() {
               href={`/omar-jouied-cv-${language}.pdf`}
               download
               className="w-full sm:w-fit text-center download-cv bg-accent text-primary px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors inline-block"
+              target='_blank'
             >
               {t('hero.downloadCV')}
             </a>
