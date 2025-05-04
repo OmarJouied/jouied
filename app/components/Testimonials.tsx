@@ -9,6 +9,7 @@ import { TestimonialType } from '../models/Testimonial'
 function TestimonialCard({ testimonial, index }: { testimonial: TestimonialType; index: number }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const { t } = useLanguage()
 
   return (
     <motion.div
@@ -28,7 +29,7 @@ function TestimonialCard({ testimonial, index }: { testimonial: TestimonialType;
         />
         <div>
           <h3 className="font-semibold text-base md:text-lg text-white">{testimonial.name}</h3>
-          <p className="text-xs md:text-sm text-gray-400">{testimonial.role} at {testimonial.company}</p>
+          <p className="text-xs md:text-sm text-gray-400">{testimonial.role} {t('at')} {testimonial.company}</p>
         </div>
       </div>
       <p className="text-sm md:text-base text-gray-300 italic">&quot;{testimonial.text}&quot;</p>

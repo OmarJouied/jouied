@@ -28,10 +28,12 @@
   },
   "projects": {
     "title": "المشاريع",
-    "viewProject": "عرض المشروع"
+    "viewProject": "عرض المشروع",
+    "sourceLink": "عرض الكود"
   },
   "testimonials": {
-    "title": "ما يقوله العملاء"
+    "title": "ما يقوله العملاء",
+    "at": "في"
   },
   "contact": {
     "title": "تواصل معي",

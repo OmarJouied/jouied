@@ -28,10 +28,12 @@
   },
   "projects": {
     "title": "Projets",
-    "viewProject": "Voir le projet"
+    "viewProject": "Voir le projet",
+    "sourceLink": "Voir le code"
   },
   "testimonials": {
-    "title": "Ce que disent les clients"
+    "title": "Ce que disent les clients",
+    "at": "chez"
   },
   "contact": {
     "title": "Contactez-moi",

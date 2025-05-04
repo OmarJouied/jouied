@@ -22,7 +22,15 @@ function ProjectCard({ project, index }: { project: ProjectType; index: number }
       <Image src={project.image || "/placeholder.svg"} alt={project.title} width={400} height={200} className="w-full h-48 object-cover" />
       <div className="p-4 md:p-6">
         <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">{project.title}</h3>
-        <p className="text-sm md:text-base text-gray-400 mb-4">{project.description}</p>
+        <ul className="text-sm md:text-base text-gray-400 mb-4">
+          {
+            project.description.map((desc, i) => (
+              <li key={i} className="mb-2">
+                <span className="text-accent font-semibold">{i}:</span> {desc}
+              </li>
+            ))
+          }
+        </ul>
         <div className="flex justify-between">
           <a href={project.liveLink ?? "/"} className="text-accent font-semibold hover:underline text-xs md:text-sm">{t('projects.viewProject')}</a>
           <a href={project.sourceLink ?? "/"} className="text-accent font-semibold hover:underline text-xs md:text-sm">{t('projects.sourceLink')}</a>

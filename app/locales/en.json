@@ -32,7 +32,8 @@
     "sourceLink": "View Code"
   },
   "testimonials": {
-    "title": "What Clients Say"
+    "title": "What Clients Say",
+    "at": "at"
   },
   "contact": {
     "title": "Get in Touch",

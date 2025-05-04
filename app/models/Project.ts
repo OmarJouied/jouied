@@ -8,7 +8,7 @@ const ProjectSchema = new Schema({
     maxlength: [60, 'Title cannot be more than 60 characters'],
   },
   description: {
-    type: String,
+    type: [String],
     required: [true, 'Please provide the description name for this job.'],
   },
   image: String,
