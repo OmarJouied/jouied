@@ -38,7 +38,7 @@ const TestimonialForm: React.FC = () => {
 
     if (res.ok) {
       await res.json();
-      e.currentTarget.reset();
+      (e.currentTarget as HTMLFormElement).reset();
     }
   };
 
@@ -46,7 +46,7 @@ const TestimonialForm: React.FC = () => {
     <div className='container mx-auto px-4 lg:px-8 mt-6 ltr'>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <Label>
-          <Select name='lang' value={formData.lang} onValueChange={(value) => handleChange({ target: { name: 'lang', value } })} required>
+          <Select name='lang' value={formData.lang} onValueChange={(value) => setFormData({ ...formData, lang: value })} required>
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Select a lang" />
             </SelectTrigger>
