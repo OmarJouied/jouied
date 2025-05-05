@@ -1,0 +1,35 @@
+[
+  {
+    "_id": {
+      "$oid": "6797f42af2666e4d62ce271e"
+    },
+    "title": "E-commerce Platform",
+    "description": "A full-stack e-commerce solution built with Next.js, featuring server-side rendering and API routes.",
+    "image": "/placeholder.svg",
+    "liveLink": "#",
+    "sourceLink": "#",
+    "lang": "en"
+  },
+  {
+    "_id": {
+      "$oid": "6797f46ef2666e4d62ce271f"
+    },
+    "title": "Task Management App",
+    "description": "A React-based task management application with real-time updates using WebSockets.",
+    "image": "/placeholder.svg",
+    "liveLink": "#",
+    "sourceLink": "#",
+    "lang": "en"
+  },
+  {
+    "_id": {
+      "$oid": "6797f4d0f2666e4d62ce2720"
+    },
+    "title": "Blog CMS",
+    "description": "A custom content management system for blogs, built with Next.js and GraphQL.",
+    "image": "/placeholder.svg",
+    "sourceLink": "#",
+    "liveLink": "#",
+    "lang": "en"
+  }
+]
