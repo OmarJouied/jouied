@@ -4,7 +4,7 @@ import { getProjects } from "../lib/getProjects";
 
 export default async function ProjectsPage({ searchParams }: { searchParams: Promise<{ lang?: Language; open: string; }> }) {
   const lang = (await searchParams).lang || 'ar' as Language;
-  const open = (await searchParams).open || 'ar' as Language;
+  const open = (await searchParams).open;
   const projects = await getProjects(lang);
 
   return (

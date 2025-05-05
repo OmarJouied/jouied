@@ -4,7 +4,7 @@ import { getSkills } from "../lib/getSkills";
 
 export default async function SkillsPage({ searchParams }: { searchParams: Promise<{ lang?: Language; open: string; }> }) {
   const lang = (await searchParams).lang || 'ar' as Language;
-  const open = (await searchParams).open || 'ar' as Language;
+  const open = (await searchParams).open;
   const skills = await getSkills();
 
   return (

@@ -4,7 +4,7 @@ import { getJobs } from "../lib/getJobs";
 
 export default async function ExperiencePage({ searchParams }: { searchParams: Promise<{ lang?: Language; open: string; }> }) {
   const lang = (await searchParams).lang || 'ar' as Language;
-  const open = (await searchParams).open || 'ar' as Language;
+  const open = (await searchParams).open;
   const jobs = await getJobs(lang);
 
   return (
