@@ -10,7 +10,7 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
   return (
     <LanguageProvider initialLang={lang}>
       <Projects projects={projects} />
-      {open && <h1>open</h1>}
+      {/* {open && <h1>open</h1>} */}
     </LanguageProvider>
   )
 }

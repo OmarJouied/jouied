@@ -10,7 +10,7 @@ export default async function ExperiencePage({ searchParams }: { searchParams: P
   return (
     <LanguageProvider initialLang={lang}>
       <Experience jobs={jobs} />
-      {open && <h1>open</h1>}
+      {/* {open && <h1>open</h1>} */}
     </LanguageProvider>
   )
 }

@@ -10,7 +10,7 @@ export default async function SkillsPage({ searchParams }: { searchParams: Promi
   return (
     <LanguageProvider initialLang={lang}>
       <Skills skills={skills} />
-      {open && <h1>open</h1>}
+      {/* {open && <h1>open</h1>} */}
     </LanguageProvider>
   )
 }
