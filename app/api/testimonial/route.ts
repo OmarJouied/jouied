@@ -4,7 +4,9 @@ export const POST = async (req: Request) => {
   try {
     const data = await req.json();
 
-    await Testimonial.create(data);
+    const testimonial = new Testimonial(data);
+    await testimonial.save();
+
     return Response.json({
       message: "Testimonial created successfully"
     });
