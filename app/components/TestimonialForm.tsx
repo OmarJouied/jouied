@@ -61,7 +61,7 @@ const TestimonialForm: React.FC = () => {
           </Select>
         </Label>
         <Label>
-          <span className="text-sm font-semibold text-secondary mb-2">
+          <span className="text-sm font-semibold text-secondary mb-2 block">
             Company Name:
           </span>
           <Input
@@ -73,7 +73,7 @@ const TestimonialForm: React.FC = () => {
           />
         </Label>
         <Label>
-          <span className="text-sm font-semibold text-secondary mb-2">
+          <span className="text-sm font-semibold text-secondary mb-2 block">
             Client Name:
           </span>
           <Input
@@ -85,7 +85,7 @@ const TestimonialForm: React.FC = () => {
           />
         </Label>
         <Label>
-          <span className="text-sm font-semibold text-secondary mb-2">
+          <span className="text-sm font-semibold text-secondary mb-2 block">
             Client Role:
           </span>
           <Input
@@ -97,7 +97,7 @@ const TestimonialForm: React.FC = () => {
           />
         </Label>
         <Label>
-          <span className="text-sm font-semibold text-secondary mb-2">
+          <span className="text-sm font-semibold text-secondary mb-2 block">
             Image URL:
           </span>
           <Input
@@ -108,7 +108,7 @@ const TestimonialForm: React.FC = () => {
           />
         </Label>
         <Label>
-          <span className="text-sm font-semibold text-secondary mb-2">
+          <span className="text-sm font-semibold text-secondary mb-2 block">
             Opinion:
           </span>
           <Textarea
