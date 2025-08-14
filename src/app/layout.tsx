@@ -22,8 +22,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  about,
+  projects,
+  skills,
+  experience,
+  contact,
 }: Readonly<{
   children: React.ReactNode;
+  about: React.ReactNode;
+  projects: React.ReactNode;
+  skills: React.ReactNode;
+  experience: React.ReactNode;
+  contact: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -38,6 +48,11 @@ export default function RootLayout({
 
           <main className="flex flex-col items-center px-4">
             {children}
+            {about}
+            {projects}
+            {skills}
+            {experience}
+            {contact}
           </main>
           <Toaster position="top-right" />
         </ActiveSectionContextProvider>
