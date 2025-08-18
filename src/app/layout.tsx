@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Header from "@/components/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,6 +55,8 @@ export default function RootLayout({
             {experience}
             {contact}
           </main>
+
+          <Footer />
           <Toaster position="top-right" />
         </ActiveSectionContextProvider>
       </body>
