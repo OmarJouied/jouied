@@ -2,7 +2,7 @@ import Contact from "@/components/contact"
 
 const page = () => {
   return (
-    <Contact />
+    <Contact myEmail={process.env.MY_EMAIL!} />
   )
 }
 

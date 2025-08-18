@@ -8,9 +8,8 @@ import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
-export default function Contact() {
+export default function Contact({ myEmail }: { myEmail: string }) {
   const { ref } = useSectionInView("Contact");
-  const myEmail = process.env.MY_EMAIL;
 
   return (
     <motion.section
