@@ -33,27 +33,35 @@ export const links = [
 export const experiencesData = [
   {
     title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    location: "FS Tetouan, Morocco",
+    descriptionList:
+      "I graduated after 3 years of studying. I immediately My personal learning journey has begun. I started with HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind, Prisma, MongoDB, and more.",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    title: "Front-End Developer | NVIT Solutions",
+    location: "Remote",
+    descriptionList: [
+      "Built Next.js/MySQL backend handling 100+ daily transactions with 99.9% uptime.",
+      "Created responsive UI with React.js/Sass improving UX satisfaction scores by 25%.",
+      "Integrated OpenLayers mapping and OpenRouteService API reducing geodata costs by 35%.",
+      "Designed UML diagrams and Figma prototypes reducing client revision cycles by 40%.",
+    ],
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Feb 2023 – Jul 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I&apos;m now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I&apos;m open to full-time opportunities.",
+    title: "Full-Stack Developer | Colainord",
+    location: "Tetouan, Morocco",
+    descriptionList: [
+      "Implemented RBAC authentication system securing 5K+ user accounts with zero breaches.",
+      "Developed React/TailwindCSS frontend reducing load times by 30% through code optimization.",
+      "Managed data workflows using TanStack/React-Table improving processing speed by 40%.",
+      "Containerized deployment using Docker on Ubuntu VPS cutting setup time by 50%.",
+    ],
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Nov 2023 – Jan 2024",
   },
 ] as const;
 
@@ -82,23 +90,29 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "Python",
   "JavaScript",
   "TypeScript",
-  "React",
+  "HTML",
+  "CSS",
+  "Sass",
+  "Django",
+  "React.js",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
+  "TailwindCSS",
+  "Figma",
+  "Framer Motion",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "MySQL",
+  "MongooseORM",
+  "Docker",
+  "Ubuntu",
+  "Git",
+  "Vercel",
+  "VPS Deployment",
+  "RESTful APIs",
+  "OOP",
+  "Algorithms",
+  "Data Structures",
 ] as const;
