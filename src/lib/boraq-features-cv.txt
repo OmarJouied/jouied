@@ -1,0 +1,12 @@
+- 1.
+Full-Stack Social Media Application : Developed a comprehensive social media platform using Next.js 13.5, React 18, TypeScript, and MongoDB that enables users to create posts, follow others, and interact through likes, comments, and saves.
+- 2.
+Authentication & Security : Implemented secure user authentication with NextAuth.js supporting multiple sign-in methods including social logins, and utilized bcryptjs for password encryption.
+- 3.
+Frontend Development : Built responsive UI with React components, SCSS/Sass styling, custom video player (React Player), and social sharing functionality (react-share).
+- 4.
+Backend Architecture : Created RESTful API endpoints with MongoDB/Mongoose for data operations and integrated Supabase for media storage and management.
+- 5.
+Key Features : Implemented post creation with media support, user profiles with follow functionality, comment system, content search/filtering, and media playback for videos.
+- 6.
+DevOps & Deployment : Containerized the application using Docker for consistent deployment across environments and configured for scalable cloud hosting.

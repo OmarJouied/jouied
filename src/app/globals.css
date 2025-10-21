@@ -26,3 +26,7 @@ body {
 .borderBlack {
   @apply border border-black/10;
 }
+
+.read-more-button {
+  @apply text-white/90 cursor-pointer underline;
+}

@@ -1,0 +1,13 @@
+
+1. **Full-Stack Messaging Application**: Developed a WhatsApp clone using React.js (v18.2.0) for the frontend and Django (v4.1.5) for the backend, creating a complete messaging platform with real-time communication.
+
+2. **Real-Time Communication**: Implemented WebSocket connections using Django Channels for instant message delivery, online status indicators, and real-time notifications.
+
+3. **Core Messaging Features**: Built comprehensive messaging functionality including one-to-one chats, group conversations, message status tracking (sent, delivered, read), and media sharing.
+
+4. **User Management System**: Created complete user authentication, profile management with customizable avatars, and contact management features.
+
+5. **Responsive Design**: Developed a mobile-first, responsive interface closely resembling WhatsApp's UI/UX for familiar user experience across devices.
+
+6. **Security Implementation**: Integrated secure user authentication, password hashing, and protected API endpoints to ensure data privacy and security.
+        

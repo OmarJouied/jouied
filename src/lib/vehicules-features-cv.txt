@@ -1,0 +1,12 @@
+- 1.
+Developed a comprehensive vehicle fleet management web application using Next.js 13 with TypeScript and React 18, featuring a responsive UI built with Tailwind CSS and Radix UI components.
+- 2.
+Implemented secure user authentication and role-based access control using NextAuth.js with credential-based login and permission management.
+- 3.
+Designed and built a MongoDB database with Mongoose ODM to track vehicle information, maintenance records, fuel consumption, expenses, and travel logs.
+- 4.
+Created interactive data visualization dashboards with Recharts to analyze vehicle performance metrics, fuel efficiency, and maintenance costs.
+- 5.
+Developed robust data management features including data import/export (Excel/CSV), filtering, sorting, and printing capabilities using libraries like TanStack Table and jsPDF.
+- 6.
+Containerized the application using Docker and Docker Compose for seamless deployment on Ubuntu VPS, ensuring consistent performance across environments.

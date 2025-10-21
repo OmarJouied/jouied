@@ -35,7 +35,7 @@ export const experiencesData = [
     title: "Graduated bootcamp",
     location: "FS Tetouan, Morocco",
     descriptionList:
-      "I graduated after 3 years of studying. I immediately My personal learning journey has begun. I started with HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind, Prisma, MongoDB, and more.",
+      "I graduated after 3 years of studying. I immediately My personal learning journey has begun. I started with HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind, MongoDB, and more.",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
@@ -54,12 +54,7 @@ export const experiencesData = [
   {
     title: "Full-Stack Developer | Colainord",
     location: "Tetouan, Morocco",
-    descriptionList: [
-      "Implemented RBAC authentication system securing 5K+ user accounts with zero breaches.",
-      "Developed React/TailwindCSS frontend reducing load times by 30% through code optimization.",
-      "Managed data workflows using TanStack/React-Table improving processing speed by 40%.",
-      "Containerized deployment using Docker on Ubuntu VPS cutting setup time by 50%.",
-    ],
+    descriptionList: "This project is a full-stack vehicle fleet management system built with Next.js 13, TypeScript, and React 18, deployed on an Ubuntu VPS server. The application uses MongoDB with Mongoose for data persistence and features a responsive UI designed with Tailwind CSS and Radix UI components. It provides comprehensive vehicle tracking capabilities including maintenance schedules, fuel consumption analytics, expense management, and travel logging. The system implements secure authentication via NextAuth.js with role-based access control. Data visualization is handled through Recharts, while TanStack Table powers advanced data operations like filtering, sorting, and pagination. The application supports data import/export functionality with Excel integration and includes document generation features. Docker containerization ensures consistent deployment and scalability across environments.",
     icon: React.createElement(FaReact),
     date: "Nov 2023 – Jan 2024",
   },
@@ -67,45 +62,33 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "WhatsApp Clone",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: "/corpcomment.png",
+      "Implemented core messaging features including one-to-one and group chats, message status tracking, user authentication, and responsive design that closely resembles the original WhatsApp interface.",
+    tags: ["React", "SCSS", "WebSocket", "Django", "Channels"],
+    imageUrl: "/whatsappclone.jpeg",
   },
   {
-    title: "rmtDev",
+    title: "Boraq App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: "/rmtdev.png",
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: "/wordanalytics.png",
+      "Developed a full-stack social media application, that enables users to create and interact with posts through likes, comments, and saves. Implemented secure authentication, responsive UI, and containerized the application for scalable deployment.",
+    tags: ["React", "SCSS", "TypeScript", "Next.js", "NextAuth.js", "Mongodb", "Supabase", "Docker"],
+    imageUrl: "/boraq.jpeg",
   },
 ] as const;
 
 export const skillsData = [
   "Python",
+  "Django",
   "JavaScript",
   "TypeScript",
-  "HTML",
-  "CSS",
-  "Sass",
-  "Django",
   "React.js",
   "Next.js",
   "TailwindCSS",
+  "Sass",
   "Figma",
-  "Framer Motion",
-  "Prisma",
   "MongoDB",
   "MySQL",
-  "MongooseORM",
   "Docker",
   "Ubuntu",
   "Git",
